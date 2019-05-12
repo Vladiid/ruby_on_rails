@@ -66,7 +66,7 @@ answer = gets.to_s.strip.upcase
      puts"Your balance = #{money} dollars"
   if money <= 0
     puts "Game is over"
-    exit
+
   end
    end
 
