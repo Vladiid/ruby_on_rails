@@ -3,9 +3,15 @@ age = gets.to_i
 print "Do you want to play? Y/N "
 answer = gets.to_s.strip.upcase
 
+if age < 18 && answer == "Y"
+puts "You're under 18 years old"
+exit
+end
  if age >= 18 && answer == "Y"
    puts "Let's play"
-  money = 100
+
+
+   money = 100
    1000.times do
 
   puts"Press Enter please:"
@@ -14,6 +20,10 @@ answer = gets.to_s.strip.upcase
   y = rand(1..9)
   z = rand(1..9)
 
+  if x == 0 && y ==0 && z == 0
+    money = 0
+    puts "Your account has been reset. Your balance = #{money} dollars"
+end
 
   if x == 1 && y ==1 && z == 1
     money = money + 10
@@ -62,13 +72,12 @@ answer = gets.to_s.strip.upcase
   end
 
   money = money - 1
-    puts "#{x}#{y}#{z}"
+    puts "Played a combination - #{x}#{y}#{z}"
      puts"Your balance = #{money} dollars"
-  if money <= 0
-    puts "Game is over"
+
+    if money <= 0
+    puts "Game is over!!!"
     exit
   end
    end
-
-
-end
+   end
