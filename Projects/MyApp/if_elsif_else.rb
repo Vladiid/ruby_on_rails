@@ -13,4 +13,4 @@ else
 puts"Wrong answer, less"
 end
 
-puts "number = #{number}!"
+puts "number = #{number}"
