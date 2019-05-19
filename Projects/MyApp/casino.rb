@@ -1,25 +1,58 @@
-print "How old are you? "
-age = gets.to_i
-print "Do you want to play? Y/N "
-answer = gets.to_s.strip.upcase
+#print "How old are you? "
+#age = gets.to_i
+#print "Do you want to play? Y/N "
+#answer = gets.to_s.strip.upcase
 
-if age < 18 && answer == "Y"
-  puts "You're under 18 years old"
-  exit
-end
-if age >= 18 && answer == "Y"
-  puts "Let's play"
+#if age < 18 && answer == "Y"
+#  puts "You're under 18 years old"
+#  exit
+#end
+#if age >= 18 && answer == "Y"
+#  puts "Let's play"
 
 
   money = 100
   1000.times do
-
+puts
     puts"Press Enter please:"
     gets
-    x = rand(1..9)
-    y = rand(1..9)
-    z = rand(1..9)
-    sleep (10)
+    x = rand(0..5)
+    y = rand(0..5)
+    z = rand(0..5)
+
+    5.times do |xx|
+
+      meter = rand (0..5)
+      if xx  < 9
+        print meter
+        print"\r"
+        sleep (0.08)
+      else print x
+      end
+    end
+puts
+    5.times do |yy|
+      meter = rand(0..5)
+      if yy  < 9
+        print meter
+        print "\r"
+        sleep (0.08)
+      else print y
+      end
+      puts
+    end
+    puts
+    5.times do |zz|
+      meter = rand(0..5)
+      if zz  < 9
+        print meter
+        print"\r"
+        sleep (0.08)
+      else print z
+      end
+    end
+    puts
+
 
     if x == 0 && y ==0 && z == 0
       money = 0
@@ -73,12 +106,11 @@ if age >= 18 && answer == "Y"
     end
 
     money = money - 5
-    puts "Played a combination - #{x}#{y}#{z}"
-    puts"Your balance = #{money} dollars"
+   # puts "Played a combination - #{x}#{y}#{z}"
+   # puts"Your balance = #{money} dollars"
 
     if money <= 0
       puts "Game is over!!!"
       exit
     end
   end
-end
