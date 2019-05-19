@@ -1,8 +1,11 @@
 
 number = rand(1..100)
-1.upto (10) do |aa|
-  10.downto (1) do |bb|
-  puts "Try #{aa}, Left #{bb}"
+
+t = 10
+
+1.upto (t) do |aa|
+  puts "Try #{aa}, Lost #{t - aa + 1}"
+
 print"Guess the number?  (1..100):"
 a = gets.to_i
 
@@ -17,10 +20,7 @@ elsif number < a
 puts"Wrong answer, less"
 end
 
-puts "number = #{number}"
-    if aa == 0 or bb == 00
-      puts "Game is over"
-      exit
-    end
-  end
-  end
+
+#puts "number = #{number}"
+
+end
