@@ -19,6 +19,7 @@ if age >= 18 && answer == "Y"
     x = rand(1..9)
     y = rand(1..9)
     z = rand(1..9)
+    sleep (10)
 
     if x == 0 && y ==0 && z == 0
       money = 0
