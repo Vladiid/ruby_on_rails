@@ -18,14 +18,14 @@ end
 comand2 = comand
 
 if comand2 ==:left
-  puts"Робат едет влево"
+  puts"Робот едет влево"
 end
 if comand2 ==:right
-  puts"Робат едет вправо"
+  puts"Робот едет вправо"
 end
 if comand2 ==:up
-  puts"Робат едет вверх"
+  puts"Робот едет вверх"
 end
 if comand2 ==:down
-  puts"Робат едет вниз"
+  puts"Робот едет вниз"
 end
