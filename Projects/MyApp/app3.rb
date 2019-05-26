@@ -15,17 +15,19 @@ def comand
   end
 cmd
 end
-comand2 = comand
+comand_true = comand
 
-if comand2 ==:left
+puts"Получена команда: #{comand_true}"
+
+if comand_true ==:left
   puts"Робот едет влево"
 end
-if comand2 ==:right
+if comand_true ==:right
   puts"Робот едет вправо"
 end
-if comand2 ==:up
+if comand_true ==:up
   puts"Робот едет вверх"
 end
-if comand2 ==:down
+if comand_true ==:down
   puts"Робот едет вниз"
 end
