@@ -1,21 +1,31 @@
 
-print"Сколько гостей к Вам придет? "
-g = gets.to_i
-
-if g <= 0
-  puts "Вы ввели ноль, или отрицательное число"
-  exit
+def comand
+  x = rand(1..4)
+  if x == 1
+    cmd = :left
+  end
+  if x == 2
+    cmd = :right
+  end
+  if x == 3
+    cmd = :up
+  end
+  if x == 4
+    cmd = :down
+  end
+cmd
 end
+comand2 = comand
 
-if g == 1
-  puts "Отлично придет один гость!"
+if comand2 ==:left
+  puts"Робат едет влево"
 end
-
-if g == 2
-  puts "Отлично придет #{g} гостя!"
+if comand2 ==:right
+  puts"Робат едет вправо"
 end
-
-if g >= 3
-  puts "Придет много гостей!"
+if comand2 ==:up
+  puts"Робат едет вверх"
 end
-
+if comand2 ==:down
+  puts"Робат едет вниз"
+end
