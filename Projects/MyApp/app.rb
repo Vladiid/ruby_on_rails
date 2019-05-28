@@ -1,13 +1,18 @@
+color = []
+
+while 2+2 == 4
+
+print "Введите ваш любимый цвет: "
+answer = gets.to_s.strip
 
 
-("10aa".."20bb").each do |x|
-  puts x
+if answer == "stop"
+  puts color
+  exit
 end
-puts "=============== "
-(0..5).each do |y|
-  puts y
+color << answer
+
 end
-puts "=============== "
-(10..11).each do |z|
-  puts z
-end
+
+
+
