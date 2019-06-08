@@ -1,27 +1,10 @@
 
 
 def comand
-  x = rand(1..4)
-  if
-    x == 1
-    cmd =:left
-  end
+  actions = [:left, :right, :up, :down]
+  x = rand(0..3)
 
-  if
-  x == 2
-    cmd =:right
-  end
-
-  if
-  x == 3
-    cmd =:up
-  end
-
-  if
-  x == 4
-    cmd =:down
-  end
-  cmd
+  return actions[x]
 end
 
 get_comand = comand
@@ -40,4 +23,14 @@ end
 
 if get_comand == :down
   puts "Робот едет вниз"
+end
+
+
+#people = ["alex", "julia", "sam", "marry", "tom", "monika"]
+people = %w[alex julia sam marry tom monika]
+
+x = 0
+people.each do |name|
+  puts "#{x} #{name}"
+ x = x + 1
 end
