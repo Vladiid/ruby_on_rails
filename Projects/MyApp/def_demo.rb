@@ -26,8 +26,8 @@ if get_comand == :down
 end
 
 
-#people = ["alex", "julia", "sam", "marry", "tom", "monika"]
-people = %w[alex julia sam marry tom monika]
+
+people = %w[alex julia sam marry tom monika 276 654 ]
 
 x = 0
 people.each do |name|
