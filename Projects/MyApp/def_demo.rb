@@ -27,3 +27,13 @@ end
 
 
 
+<<<<<<< HEAD
+=======
+people = %w[alex julia sam marry tom monika 276 654 ]
+
+x = 0
+people.each do |name|
+  puts "#{x} #{name}"
+ x = x + 1
+end
+>>>>>>> 63964a62060fa4e5fb54a0923a50db9ac6a2609c
