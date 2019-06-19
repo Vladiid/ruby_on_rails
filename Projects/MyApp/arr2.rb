@@ -11,12 +11,12 @@ loop do
   age = gets.strip
   arr2.push name
   arr2.push age
-  arr.push arr2
+  #arr.push arr2
 end
 
 x=0
 arr.each do |sat|
   x = x+1
-  puts"#{x}. #{sat[0]} - #{sat[1]}"
+  puts"#{x}. #{sat[0]} - #{sat[1]} years."
 end
 
