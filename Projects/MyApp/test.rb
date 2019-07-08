@@ -8,7 +8,7 @@ elsif s == "S"
 elsif s == "P"
   user_choice = :paper
 else
-  "Can't you understand, what you want!"
+  puts "Can't understand what you want? Sorry."
   exit
 end
 
@@ -40,7 +40,7 @@ matrix.each do |item|
         puts "User Wins"
         elsif item [2] == :second_win
           puts "Computer Wins"
-        elsif item [2] == :draw
+        else
           puts"Draw!"
       end
       exit
