@@ -1,5 +1,5 @@
 
-phone_book= {'dog' => 'собака', 'cat' => 'кошка', 'girl' => 'девушка'}
+phone_book= {'dog' => ['собака', 'пес'], 'cat' => ['кошка','кот'], 'girl' => ['девушка']}
 loop do
 
   print'Enter Word: '
@@ -7,9 +7,11 @@ loop do
   if word == ''
     break
   end
-  translation = phone_book[word]
-    puts "Tranlate: #{translation}"
-  end
+  arr = phone_book[word]
+    puts "Translate: "
+  puts arr
+  puts "Number of transfers #{arr.size}"
+   end
 
 =begin
 print 'Enter name: '
