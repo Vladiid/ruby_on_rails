@@ -1,28 +1,15 @@
+puts "Врага какого персонажа вы хотите узнать: "
 
-phone_book= {'dog' => 'собака', 'cat' => 'кошка', 'girl' => 'девушка'}
-loop do
+hero = gets.strip.capitalize
 
-  print'Enter Word: '
-  word = gets.strip
-  if word == ''
-    break
-  end
-  translation = phone_book[word]
-    puts "Tranlate: #{translation}"
-  end
-
-=begin
-print 'Enter name: '
-name = gets.strip.capitalize
-if name == ''
-  break
+heroes_antiheroes = {
+    "Batman" => "Джокер",
+    "Tor" => "Локи",
+    "Harry" => "Волан Деморт",
+    "Neo" => "Агент Смит"
+}
+if heroes_antiheroes.has_key?(hero)
+  puts "Врагом этого героя являеться: #{heroes_antiheroes[hero]}"
+else
+  puts"Враг не найден"
 end
-print 'Enter number: '
-number = gets.strip
-
-phone_book[name] = number
-end
-phone_book.each do |key, value|
-  puts "Name: #{key}, Phone: #{value} "
-end
-=end
