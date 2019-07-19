@@ -1,5 +1,3 @@
-
-
 print "(R)rock, (S)scissors, (P)paper? "
 s = gets.strip.capitalize
 
@@ -23,18 +21,18 @@ puts "User Choice: #{user_choice}"
 puts "Computer Choice: #{computer_choice}"
 
 matrix = [
-  [:rock, :rock, :draw],
-  [:scissors, :scissors, :draw],
-  [:paper, :paper, :draw],
+    [:rock, :rock, :draw],
+    [:scissors, :scissors, :draw],
+    [:paper, :paper, :draw],
 
-  [:rock, :scissors, :firs_win],
-  [:rock, :paper, :second_win],
+    [:rock, :scissors, :firs_win],
+    [:rock, :paper, :second_win],
 
-  [:scissors, :rock, :second_win],
-  [:scissors, :paper, :first_win],
+    [:scissors, :rock, :second_win],
+    [:scissors, :paper, :first_win],
 
-  [:paper, :rock, :firs_win],
-  [:paper, :scissors, :second_win]
+    [:paper, :rock, :firs_win],
+    [:paper, :scissors, :second_win]
 ]
 
 matrix.each do |item|
@@ -42,7 +40,7 @@ matrix.each do |item|
     if item[2] == :firs_win
       puts "User wins!"
     elsif item[2] == :second_win
-      puts"Computer wins!"
+      puts "Computer wins!"
     elsif item[2] == :draw
       puts "DROW!"
     end
