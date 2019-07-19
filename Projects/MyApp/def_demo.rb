@@ -1,5 +1,3 @@
-
-
 def comand
   actions = [:left, :right, :up, :down]
   x = rand(0..3)
@@ -26,14 +24,13 @@ if get_comand == :down
 end
 
 
-
-<<<<<<< HEAD
-=======
-people = %w[alex julia sam marry tom monika 276 654 ]
+<< << << < HEAD
+=== === =
+    people = %w[alex julia sam marry tom monika 276 654 ]
 
 x = 0
 people.each do |name|
   puts "#{x} #{name}"
- x = x + 1
+  x = x + 1
 end
->>>>>>> 63964a62060fa4e5fb54a0923a50db9ac6a2609c
+>> >> >> > 63964 a62060fa4e5fb54a0923a50db9ac6a2609c
