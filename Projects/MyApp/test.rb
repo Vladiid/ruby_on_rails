@@ -35,14 +35,14 @@ matrix = [
 ]
 
 matrix.each do |item|
-    if item [0] == user_choice && item[1] == computer_choice
-      if item [2] == :first_win
-        puts "User Wins"
-        elsif item [2] == :second_win
-          puts "Computer Wins"
-        else
-          puts"Draw!"
-      end
-      exit
-      end
+  if item [0] == user_choice && item[1] == computer_choice
+    if item [2] == :first_win
+      puts "User Wins"
+    elsif item [2] == :second_win
+      puts "Computer Wins"
+    else
+      puts "Draw!"
     end
+    exit
+  end
+end
