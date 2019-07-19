@@ -11,7 +11,7 @@ if symbol == "/" && b == 0
 end
 
 if symbol == "+"
-  print"#{a} + #{b} = #{a + b}"
+  print "#{a} + #{b} = #{a + b}"
 end
 
 if symbol == "-"
