@@ -4,7 +4,7 @@ loop do
   arr2 = []
   puts "Enter name to add: "
   name = gets.strip
-   if name  == ""
+  if name == ""
     break
   end
   puts "Enter age: "
@@ -14,9 +14,9 @@ loop do
   #arr.push arr2
 end
 
-x=0
+x = 0
 arr.each do |sat|
-  x = x+1
-  puts"#{x}. #{sat[0]} - #{sat[1]} years."
+  x = x + 1
+  puts "#{x}. #{sat[0]} - #{sat[1]} years."
 end
 
